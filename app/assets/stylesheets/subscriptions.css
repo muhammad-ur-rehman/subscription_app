@@ -1,0 +1,203 @@
+:root {
+	--sub-heading-font-weight: 400;
+	--main-color: #FFD700;
+	--main-background-color: #DFDEDE;
+  }
+
+
+.container {
+	max-width: fit-content;
+}
+
+.accordions {
+	margin: 20px 20px;
+}
+
+.ptable-top-text {
+	font-size: 1.6rem;
+	font-weight: var(--sub-heading-font-weight);
+}
+
+.ptable-heading-text {
+	font-weight: 500;
+}
+
+.ptable-body-sub-text {
+	font-size: 0.8rem;
+	font-weight: var(--sub-heading-font-weight);
+}
+
+.ptable-body-text {
+	font-size: 0.9rem;
+	font-weight: var(--sub-heading-font-weight);
+}
+
+.no-border {
+	border: white !important;
+	border-style: solid none solid solid !important;
+}
+
+
+.pricing {
+	margin: 20px 10px;
+}
+
+.gray-border {
+	border: var(--main-background-color) !important;
+	border-top-style: solid !important;
+	border-top-width: 1px !important;
+}
+
+.pricing .table {
+	border-top: 1px solid #ddd;
+	background: var(--main-background-color);
+}
+
+.pricing .table th,
+.pricing .table {
+	text-align: center;
+	vertical-align: baseline;
+}
+
+.pricing .table th,
+.pricing .table td {
+	padding: 20px 10px;
+	border: 1px solid #ddd;
+}
+
+.pricing .table th {
+	width: 25%;
+	font-size: 30px;
+	font-weight: var(--sub-heading-font-weight);
+	border-bottom: 0;
+	background: white;
+	text-transform: capitalize;
+}
+
+.pricing .table th.highlight {
+	border-top: 2px solid var(--main-color) !important;
+}
+
+.pricing .table td:first-child {
+	padding-left: 20px;
+	text-align: left;
+	padding-top: 35px;
+	background: var(--main-background-color);
+	border: var(--main-background-color) !important;
+	border-style: solid none solid solid !important;
+
+}
+
+.pricing .table td:nth-child(3) {
+
+	border-left-color: var(--main-color);
+	border-left-width: 2px;
+	border-right-color: var(--main-color);
+	border-right-width: 2px;
+}
+
+.pricing .table th:nth-child(3) {
+
+	border-left-color: var(--main-color) !important;
+	border-left-width: 2px;
+	border-right-color: var(--main-color) !important;
+	border-right-width: 2px;
+}
+
+
+.pricing .table th:first-child {
+
+	background: var(--main-background-color);
+	border: var(--main-background-color) !important;
+
+
+}
+
+
+.bottom-yellow-border {
+	border-bottom-color: var(--main-color) !important;
+	border-bottom-width: 2px !important;
+}
+
+
+.pricing tr td .ptable-title {
+	font-size: 1rem;
+	font-weight: var(--sub-heading-font-weight);
+
+}
+
+.pricing .ptable-icon {
+	position: relative;
+	display: block;
+	text-align: center;
+}
+
+.pricing .ptable-price {
+	display: block;
+}
+
+.pricing tr td {
+	font-size: 16px;
+	line-height: 32px;
+	text-transform: capitalize;
+	background: white;
+}
+
+
+.pricing tr td i {
+	display: block;
+	margin-bottom: 12px;
+	font-size: 30px;
+}
+
+.pricing tr td i.green {
+	color: #4caf50;
+}
+
+.pricing tr td:first-child i {
+	display: inline;
+	margin-bottom: 0px;
+	font-size: 22px;
+}
+
+
+.accordion {
+	background-color: white;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	font-weight: 500;
+	transition: 0.4s;
+	margin-bottom: 5px;
+}
+
+.active,
+.accordion:hover {
+	background-color: #ccc;
+}
+
+.accordion:after {
+	content: '\21E3';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\21E1";
+}
+
+.panel {
+	padding: 0 18px;
+  margin: 10px 0;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
